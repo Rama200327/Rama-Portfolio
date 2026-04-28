@@ -1,0 +1,523 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+ 
+body {
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+  background-color: #fff5f8;
+  color: #333;
+}
+ 
+/* ── NAV ── */
+nav {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: pink;
+  height: 80px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+ 
+.Logo {
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+}
+ 
+.R {
+  color: #c2185b;
+}
+ 
+.navbar ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+}
+ 
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+}
+ 
+.navbar a:hover {
+  background-color: lightpink;
+}
+ 
+.navbar li {
+  float: left;
+}
+ 
+/* ── GENERAL ── */
+main {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+ 
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: pink;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 0.9rem;
+}
+ 
+/* ── SECTION TITLE ── */
+.Title-Bage,
+.title-skills {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ 
+.Title-Bage::after,
+.title-skills::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: pink;
+  margin-top: 10px;
+  border-radius: 2px;
+}
+ 
+/* ── HERO ── */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 0;
+  padding: 0 4rem;
+  min-height: 80vh;
+}
+ 
+.left {
+  flex: 1;
+  font-size: 18px;
+}
+ 
+.greeting {
+  font-size: 1.1rem;
+  color: #888;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+}
+ 
+.name {
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: #222;
+}
+ 
+.left p {
+  font-size: 1.05rem;
+}
+ 
+.right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+ 
+.rama {
+  color: pink;
+}
+ 
+.title-badge {
+  color: pink;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+ 
+.about-text {
+  color: #555;
+  line-height: 1.8;
+  padding-right: 3rem;
+  
+}
+ 
+.cta-row {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+ 
+.button1 {
+  background-color: pink;
+  color:#880033;
+  border-radius: 20px;
+  border: none;
+  width: 130px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+ 
+.button1:hover {
+  background-color: hotpink;
+}
+ 
+.social {
+  display: flex;
+  gap: 12px;
+}
+ 
+.social a {
+  color: pink;
+  font-size: 1.4rem;
+}
+ 
+.social a:hover {
+  color: hotpink;
+}
+ 
+.right img {
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0px 2px 62px 27px rgba(255, 159, 159, 0.5);
+}
+ 
+/* ── STATS ── */
+.stats-section {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 3rem 4rem;
+  background-color: pink;
+  margin-top: 4rem;
+}
+ 
+.stat-box {
+  text-align: center;
+  color: white;
+  padding: 1rem 2rem;
+}
+ 
+.stat-box h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+ 
+.stat-box p {
+  font-size: 1rem;
+  margin: 0.3rem 0 0;
+  font-weight: 400;
+}
+ 
+/* ── ABOUT ── */
+.container2 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+ 
+.container2 img {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0px 1px 62px 4px rgba(255, 159, 159, 0.5);
+  margin-bottom: 1.5rem;
+}
+ 
+.about-text2 {
+  padding-left: 6rem;
+  padding-right: 6rem;
+  color: #555;
+  line-height: 1.9;
+  font-size: 1rem;
+  max-width: 800px;
+ font-weight: 700;
+}
+ 
+/* ── SKILLS ── */
+#skills {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+ 
+.skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-direction: row;
+  margin-bottom: 5rem;
+  flex-wrap: wrap;
+}
+ 
+.s {
+  background-color: pink;
+  color: white;
+  width: 8rem;
+  height: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.8rem;
+  border-radius: 16px;
+  transition:
+    transform 0.2s,
+    background-color 0.2s;
+  cursor: pointer;
+  gap: 6px;
+}
+ 
+.s:hover {
+  background-color: hotpink;
+  transform: translateY(-6px);
+}
+ 
+.skill-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+ 
+/* ── PROJECTS ── */
+#projects {
+  margin-top: 4rem;
+  margin-bottom: 5rem;
+}
+ 
+.projects-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 0 3rem;
+}
+ 
+.project-card {
+  background-color: white;
+  border-radius: 16px;
+  width: 300px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(255, 159, 159, 0.2);
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+ 
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 30px rgba(255, 159, 159, 0.4);
+}
+ 
+.project-img {
+  background-color: pink;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  color: white;
+}
+ 
+.project-info {
+  padding: 1.2rem;
+}
+ 
+.project-info h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #222;
+  margin: 0 0 0.5rem;
+}
+ 
+.project-info p {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.6;
+  margin: 0 0 1rem;
+}
+ 
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 1rem;
+}
+ 
+.tag {
+  background-color: #fff0f5;
+  color: hotpink;
+  border-radius: 20px;
+  padding: 3px 12px;
+  font-size: 0.78rem;
+  font-weight: 500;
+}
+ 
+.project-links {
+  display: flex;
+  gap: 1rem;
+}
+ 
+.project-links a {
+  color: pink;
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+ 
+.project-links a:hover {
+  color: hotpink;
+}
+ 
+/* ── CONTACT ── */
+#contact {
+  margin-top: 4rem;
+  margin-bottom: 8rem;
+}
+ 
+.contact-section {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+  padding: 0 4rem;
+}
+ 
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  justify-content: center;
+}
+ 
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1rem;
+  color: #444;
+}
+ 
+.contact-item i {
+  color: pink;
+  font-size: 1.2rem;
+  width: 20px;
+}
+ 
+.contact-social {
+  margin-top: 0.5rem;
+}
+ 
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 400px;
+}
+ 
+.field {
+  padding: 12px 16px;
+  border: 1.5px solid #f9c0d4;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.95rem;
+  outline: none;
+  background-color: white;
+  transition: border-color 0.2s;
+}
+ 
+.field:focus {
+  border-color: pink;
+}
+ 
+textarea.field {
+  resize: vertical;
+}
+ 
+.send-btn {
+  width: 100%;
+  height: 44px;
+  font-size: 1rem;
+  color: #880033;
+}
+ 
+@media (max-width: 768px) {
+ 
+  /* الهيرو — حطي الصورة والنص فوق بعض بدل جنب بعض */
+  .container {
+    flex-direction: column-reverse;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+ 
+  /* صغّري الصورة */
+  .right img {
+    width: 250px;
+    height: 250px;
+  }
+ 
+  /* صغّري الاسم */
+  .name {
+    font-size: 2rem;
+  }
+/* الناف بار — تخبيه وتحطي اللوغو بالمنتصف */
+  nav {
+    justify-content: center;
+  }
+ 
+  .navbar ul {
+    display: none;
+  }
+ 
+  /* النص الـ about */
+  .about-text {
+    padding-right: 0;
+  }
+ 
+  /* قسم الستاتس */
+  .stats-section {
+    padding: 2rem 1rem;
+  }
+ 
+  /* قسم الأبوت */
+  .about-text2 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+ 
+  /* الكونتاكت فورم */
+  .contact-form {
+    width: 100%;
+  }
+ 
+  .contact-section {
+    padding: 0 1rem;
+  }
+}
